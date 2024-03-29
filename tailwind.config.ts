@@ -7,7 +7,18 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {},
+  
+    container: {
+      center: true,
+      screens:{
+        "2xl": "1440px",
+      }
+    },
+    extend: {
+      colors:{
+        'primary':'#0064FF',
+      },
+    },
   },
   plugins: [],
 };
