@@ -15,7 +15,7 @@ const pricedownFont = localFont({
 });
 
 export const metadata: Metadata = {
-  title: 'GTA AL-CHAPO',
+  title: 'EL-Chapo',
   description: 'Drugs are not problem, they’re just business',
 };
 
