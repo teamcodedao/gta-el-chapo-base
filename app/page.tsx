@@ -126,10 +126,10 @@ export default function Home() {
           <Image src={hero3} quality={100} alt='hero-3' />
           <div className='absolute inset-0 bg-hero'></div>
           <div className='absolute inset-0'>
-            <div className='flex flex-col pt-10 md:pt-20 lg:pt-32 w-full lg:w-auto lg:absolute right-36 lg:max-w-lg h-full gap-10 lg:gap-16'>
+            <div className='flex flex-col pt-10 md:pt-20 lg:pt-32 w-full lg:w-auto lg:absolute right-36 h-full gap-10 lg:gap-16'>
               <div className='flex justify-center'>
-                <button className='text-primary bg-white rounded-full p-3 sm:p-5 lg:px-16 lg:py-10 text-2xl lg:text-6xl inline-block cursor-default'>
-                  CA: TBA
+                <button className='text-primary bg-white rounded-full p-3 sm:p-5 lg:px-16 lg:py-10 text-2xl inline-block cursor-default break-all'>
+                  CA: {process.env.NEXT_PUBLIC_COIN_ADDRESS}
                 </button>
               </div>
               <h3 className='text-3xl lg:text-6xl text-center whitespace-nowrap'>
