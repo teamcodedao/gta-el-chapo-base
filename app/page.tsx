@@ -46,8 +46,6 @@ export default function Home() {
                 About
               </h2>
               <div className='mt-24 uppercase text-3xl text-right'>
-                Chapo coin Hot Ladys on Bas. $GTACHAPO is an aesthetic, a
-                lifestyle and a community. You like the art, we paint it blue!
                 MA 15+ Action Violence, Coarse Language, Drug References, Drug
                 Use, Mature Themes, Nudity, Sex Scenes, Sexual References,
                 Violence.
@@ -68,7 +66,7 @@ export default function Home() {
       </div>
       <div className='bg-primary text-white py-11'>
         <Marquee autoFill>
-          <span className='text-5xl inline-block px-14'>$EL-Chapo</span>
+          <span className='text-5xl inline-block px-14'>$DROGA</span>
         </Marquee>
       </div>
       <div>todo</div>
