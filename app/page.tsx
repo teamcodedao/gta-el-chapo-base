@@ -13,13 +13,13 @@ import man5 from './man-5.png';
 export default function Home() {
   return (
     <main className='min-h-screen'>
-      <header className='bg-white text-black flex gap-8 justify-center overflow-hidden'>
+      <header className='bg-white text-black flex gap-4 sm:gap-8 justify-center overflow-hidden px-10 sm:px-2 lg:px-0'>
         <div className='flex items-center shrink-0'>
-          <img src='/man.png' alt='man' />
+          <img src='/man.png' alt='man' className='hidden lg:block' />
           <img src='/logo.png' alt='logo' />
         </div>
         <nav>
-          <ul className='flex gap-10 text-3xl font-light h-full items-center flex-wrap'>
+          <ul className='flex gap-2 sm:gap-5 lg:gap-10 text-lg sm:text-lx md:text-2xl lg:text-3xl font-light h-full items-center flex-wrap'>
             <li>
               <a href='#home'>Home</a>
             </li>
@@ -35,7 +35,9 @@ export default function Home() {
           </ul>
         </nav>
         <div className='flex items-center shrink-0'>
-          <button className='text-2xl btn-comic !px-10'>Buy Now</button>
+          <button className='sm:text-lg md:text-xl lg:text-2xl btn-comic !px-10'>
+            Buy Now
+          </button>
         </div>
       </header>
       <div id='home' className='bg-primary flex justify-center pb-5'>
@@ -50,15 +52,15 @@ export default function Home() {
           <div className='absolute inset-0 bg-hero'></div>
           <div className='absolute inset-0'>
             <div className='flex flex-col justify-center absolute right-10 lg:right-36 lg:max-w-lg h-full'>
-              <h2 className='text-5xl lg:text-8xl font-extrabold font-pricedown text-right'>
+              <h2 className='text-5xl sm:text-6xl lg:text-8xl font-extrabold font-pricedown text-right'>
                 About
               </h2>
-              <div className='mt-5 sm:mt-10 lg:mt-24 uppercase text-xl lg:text-3xl text-right'>
+              <div className='mt-5 sm:mt-10 lg:mt-24 uppercase text-xl sm:text-2xl lg:text-3xl text-right'>
                 MA 15+ Action Violence, Coarse Language, Drug References, Drug
                 Use, Mature Themes, Nudity, Sex Scenes, Sexual References,
                 Violence.
               </div>
-              <div className='mt-5 lg:mt-16 flex justify-end'>
+              <div className='mt-5 sm:mt-12 lg:mt-16 flex justify-end'>
                 <div className='bg-white rounded-full flex gap-5 sm:gap-10 lg:gap-16 p-2 sm:p-5 lg:px-14 lg:py-4'>
                   <a href={process.env.NEXT_PUBLIC_TWITTER_URL} target='_x'>
                     <img src='/x.svg' alt='x' className='h-10 lg:h-16' />
