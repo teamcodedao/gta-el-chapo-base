@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Marquee from 'react-fast-marquee';
 
 import hero1 from './hero-1.png';
 import hero2 from './hero-2.png';
@@ -52,10 +53,10 @@ export default function Home() {
               </div>
               <div className='mt-16 flex justify-end'>
                 <div className='bg-white rounded-full flex gap-16 px-14 py-4'>
-                  <a href='#'>
+                  <a href='#' target='_x'>
                     <img src='/twitter.png' alt='x' className='h-16' />
                   </a>
-                  <a>
+                  <a href='#' target='_tele'>
                     <img src='/telegram.png' alt='tele' className='h-16' />
                   </a>
                 </div>
@@ -64,6 +65,12 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className='bg-primary text-white py-11'>
+        <Marquee autoFill>
+          <span className='text-5xl inline-block px-14'>$EL-Chapo</span>
+        </Marquee>
+      </div>
+      <div>todo</div>
       <footer className='bg-primary text-center py-12 font-pricedown text-4xl'>
         2024 © all rights reserved
       </footer>
