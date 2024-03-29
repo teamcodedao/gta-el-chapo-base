@@ -3,6 +3,7 @@ import Marquee from 'react-fast-marquee';
 
 import hero1 from './hero-1.png';
 import hero2 from './hero-2.png';
+import hero3 from './hero-3.png';
 
 export default function Home() {
   return (
@@ -37,7 +38,7 @@ export default function Home() {
       </div>
       <div className='flex justify-center bg-[url(/hero-2-mini.png)] bg-no-repeat bg-cover bg-right-top'>
         <div className='relative w-fit'>
-          <Image src={hero2} quality={100} alt='hero-1' />
+          <Image src={hero2} quality={100} alt='hero-2' />
           <div className='absolute inset-0 bg-hero'></div>
           <div className='absolute inset-0'>
             <div className='flex flex-col justify-center absolute right-36 max-w-lg h-full'>
@@ -54,10 +55,10 @@ export default function Home() {
               <div className='mt-16 flex justify-end'>
                 <div className='bg-white rounded-full flex gap-16 px-14 py-4'>
                   <a href='#' target='_x'>
-                    <img src='/twitter.png' alt='x' className='h-16' />
+                    <img src='/x.svg' alt='x' className='h-16' />
                   </a>
                   <a href='#' target='_tele'>
-                    <img src='/telegram.png' alt='tele' className='h-16' />
+                    <img src='/tele.svg' alt='tele' className='h-16' />
                   </a>
                 </div>
               </div>
@@ -77,6 +78,29 @@ export default function Home() {
         </h2>
         <h4 className='text-4xl'>Total supply:</h4>
         <h4 className='text-7xl -mt-12'>420,690,000</h4>
+      </div>
+      <div className='flex justify-center bg-[url(/hero-3-mini.png)] bg-no-repeat bg-cover bg-right-bottom'>
+        <div className='relative w-fit'>
+          <Image src={hero3} quality={100} alt='hero-3' />
+          <div className='absolute inset-0 bg-hero'></div>
+          <div className='absolute inset-0'>
+            <div className='flex flex-col pt-32 absolute right-36 max-w-lg h-full gap-16'>
+              <div className='flex justify-center'>
+                <button className='text-primary bg-white rounded-full px-16 py-10 text-6xl inline-block cursor-default'>
+                  CA: TBA
+                </button>
+              </div>
+              <h3 className='text-6xl text-center whitespace-nowrap'>
+                Follow EL-Chapo
+              </h3>
+              <div className=' flex justify-center'>
+                <a href='#' target='_x'>
+                  <img src='/x.svg' alt='x' className='h-48' />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <footer className='bg-primary text-center py-12 font-pricedown text-4xl'>
         2024 © all rights reserved
