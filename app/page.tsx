@@ -39,11 +39,11 @@ export default function Home() {
           <Image src={hero2} quality={100} alt='hero-1' />
           <div className='absolute inset-0 bg-hero'></div>
           <div className='absolute inset-0'>
-            <div className='flex flex-col justify-center absolute right-36 max-w-md h-full'>
-              <h3 className='text-7xl font-extrabold font-pricedown text-right'>
+            <div className='flex flex-col justify-center absolute right-36 max-w-lg h-full'>
+              <h3 className='text-8xl font-extrabold font-pricedown text-right'>
                 About
               </h3>
-              <div className='mt-24 uppercase text-2xl text-right'>
+              <div className='mt-24 uppercase text-3xl text-right'>
                 Chapo coin Hot Ladys on Bas. $GTACHAPO is an aesthetic, a
                 lifestyle and a community. You like the art, we paint it blue!
                 MA 15+ Action Violence, Coarse Language, Drug References, Drug
@@ -64,6 +64,9 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <footer className='bg-primary text-center py-12 font-pricedown text-4xl'>
+        2024 © all rights reserved
+      </footer>
     </main>
   );
 }
