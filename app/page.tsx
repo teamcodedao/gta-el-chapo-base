@@ -128,9 +128,9 @@ export default function Home() {
           <div className='absolute inset-0'>
             <div className='flex flex-col pt-10 md:pt-20 lg:pt-32 w-full lg:w-auto lg:absolute right-36 h-full gap-10 lg:gap-16'>
               <div className='flex justify-center'>
-                <button className='text-primary bg-white rounded-full p-3 sm:p-5 lg:px-16 lg:py-10 text-2xl inline-block cursor-default break-all'>
-                  CA: {process.env.NEXT_PUBLIC_COIN_ADDRESS}
-                </button>
+                <h4 className='text-primary bg-white rounded-full p-3 sm:p-5 lg:px-16 lg:py-10 text-2xl inline-block break-all'>
+                  CA: <span>{process.env.NEXT_PUBLIC_COIN_ADDRESS}</span>
+                </h4>
               </div>
               <h3 className='text-3xl lg:text-6xl text-center whitespace-nowrap'>
                 Follow EL-Chapo
