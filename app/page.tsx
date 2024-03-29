@@ -9,6 +9,7 @@ import man2 from './man-2.png';
 import man3 from './man-3.png';
 import man4 from './man-4.png';
 import man5 from './man-5.png';
+import manSection from './man-section.svg';
 
 export default function Home() {
   return (
@@ -81,7 +82,10 @@ export default function Home() {
           </span>
         </Marquee>
       </div>
-      <div className='bg-[#1A1A1A]'>
+      <div className='bg-[#1A1A1A] flex justify-center'>
+        <Image src={manSection} alt='man' />
+      </div>
+      <div className='bg-[#1A1A1A] hidden'>
         <div className='max-w-full w-[1440px] mx-auto grid grid-cols-3 gap-4 lg:gap-8 px-4 sm:px-8 lg:px-0 py-4 sm:py-8 [&_img]:object-cover'>
           <div>
             <Image src={man1} quality={100} alt='man-1' />
