@@ -12,16 +12,22 @@ import man5 from './man-5.png';
 import manSection from './man-section.svg';
 
 import Nav from './nav';
+import Hamburger from './hamburger';
 
 export default function Home() {
   return (
     <main className='min-h-screen'>
-      <header className='bg-white text-black flex gap-4 sm:gap-8 justify-center overflow-hidden py-0 sm:py-2 lg:py-0 px-10 sm:px-2 xl:px-0'>
+      <header className='bg-white text-black flex gap-4 sm:gap-8 justify-between sm:justify-center overflow-hidden py-0 sm:py-2 lg:py-0 px-2 sm:px-2 xl:px-0'>
+        <div className='shrink-0 flex items-center sm:hidden'>
+          <Hamburger />
+        </div>
         <div className='flex items-center shrink-0'>
           <img src='/man.png' alt='man' className='hidden lg:block' />
           <img src='/logo.png' alt='logo' />
         </div>
-        <Nav />
+        <nav className='self-center hidden sm:block'>
+          <Nav />
+        </nav>
         <div className='flex items-center shrink-0'>
           <a
             href={process.env.NEXT_PUBLIC_COIN_URL}
