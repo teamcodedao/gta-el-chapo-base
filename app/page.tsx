@@ -60,10 +60,10 @@ export default function Home() {
               </div>
               <div className='mt-16 flex justify-end'>
                 <div className='bg-white rounded-full flex gap-16 px-14 py-4'>
-                  <a href='#' target='_x'>
+                  <a href={process.env.NEXT_PUBLIC_TWITTER_URL} target='_x'>
                     <img src='/x.svg' alt='x' className='h-16' />
                   </a>
-                  <a href='#' target='_tele'>
+                  <a href={process.env.NEXT_PUBLIC_TELEGRAM_URL} target='_tele'>
                     <img src='/tele.svg' alt='tele' className='h-16' />
                   </a>
                 </div>
@@ -131,7 +131,7 @@ export default function Home() {
                 Follow EL-Chapo
               </h3>
               <div className=' flex justify-center'>
-                <a href='#' target='_x'>
+                <a href={process.env.NEXT_PUBLIC_TWITTER_URL} target='_x'>
                   <img src='/x.svg' alt='x' className='h-48' />
                 </a>
               </div>

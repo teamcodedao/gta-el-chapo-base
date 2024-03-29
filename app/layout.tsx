@@ -16,7 +16,7 @@ const pricedownFont = localFont({
 
 export const metadata: Metadata = {
   title: 'GTA AL-CHAPO',
-  description: 'GTA AL-CHAPO',
+  description: 'Drugs are not problem, they’re just business',
 };
 
 export default function RootLayout({
