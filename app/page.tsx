@@ -21,16 +21,16 @@ export default function Home() {
         <nav>
           <ul className='flex gap-10 text-3xl font-light h-full items-center flex-wrap'>
             <li>
-              <a href='#'>Home</a>
+              <a href='#home'>Home</a>
             </li>
             <li>
-              <a href='#'>About</a>
+              <a href='#about'>About</a>
             </li>
             <li>
-              <a href='#'>How to buy</a>
+              <a href='#how-to-buy'>How to buy</a>
             </li>
             <li>
-              <a href='#'>Tokenomics</a>
+              <a href='#tokenomics'>Tokenomics</a>
             </li>
           </ul>
         </nav>
@@ -38,10 +38,13 @@ export default function Home() {
           <button className='text-2xl btn-comic !px-10'>Buy Now</button>
         </div>
       </header>
-      <div className='bg-primary flex justify-center pb-5'>
+      <div id='home' className='bg-primary flex justify-center pb-5'>
         <Image src={hero1} quality={100} alt='hero-1' />
       </div>
-      <div className='flex justify-center bg-[url(/hero-2-mini.png)] bg-no-repeat bg-cover bg-right-top'>
+      <div
+        id='about'
+        className='flex justify-center bg-[url(/hero-2-mini.png)] bg-no-repeat bg-cover bg-right-top'
+      >
         <div className='relative w-fit'>
           <Image src={hero2} quality={100} alt='hero-2' />
           <div className='absolute inset-0 bg-hero'></div>
@@ -100,14 +103,20 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className='h-[810px] bg-primary bg-[url(/money-bg.gif)] bg-cover flex flex-col items-center justify-center gap-16'>
+      <div
+        id='tokenomics'
+        className='h-[810px] bg-primary bg-[url(/money-bg.gif)] bg-cover flex flex-col items-center justify-center gap-16'
+      >
         <h2 className='font-pricedown drop-shadow-[0px_2px_2px_rgba(0,0,0,0.75)] text-8xl'>
           Tokenomics
         </h2>
         <h4 className='text-4xl'>Total supply:</h4>
         <h4 className='text-7xl -mt-12'>420,690,000</h4>
       </div>
-      <div className='flex justify-center bg-[url(/hero-3-mini.png)] bg-no-repeat bg-cover bg-right-bottom'>
+      <div
+        id='how-to-buy'
+        className='flex justify-center bg-[url(/hero-3-mini.png)] bg-no-repeat bg-cover bg-right-bottom'
+      >
         <div className='relative w-fit'>
           <Image src={hero3} quality={100} alt='hero-3' />
           <div className='absolute inset-0 bg-hero'></div>
