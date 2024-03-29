@@ -11,6 +11,8 @@ import man4 from './man-4.png';
 import man5 from './man-5.png';
 import manSection from './man-section.svg';
 
+import Nav from './nav';
+
 export default function Home() {
   return (
     <main className='min-h-screen'>
@@ -19,37 +21,26 @@ export default function Home() {
           <img src='/man.png' alt='man' className='hidden lg:block' />
           <img src='/logo.png' alt='logo' />
         </div>
-        <nav>
-          <ul className='flex gap-x-2 sm:gap-x-5 lg:gap-x-10 text-lg sm:text-lx md:text-2xl lg:text-3xl font-light h-full items-center flex-wrap'>
-            <li>
-              <a href='#home'>Home</a>
-            </li>
-            <li>
-              <a href='#about'>About</a>
-            </li>
-            <li>
-              <a href='#how-to-buy'>How to buy</a>
-            </li>
-            <li>
-              <a href='#tokenomics'>Tokenomics</a>
-            </li>
-          </ul>
-        </nav>
+        <Nav />
         <div className='flex items-center shrink-0'>
-          <button className='sm:text-lg md:text-xl lg:text-2xl btn-comic px-5 sm:!px-10'>
+          <a
+            href={process.env.NEXT_PUBLIC_COIN_URL}
+            target='_buy'
+            className='sm:text-lg md:text-xl lg:text-2xl btn-comic px-5 sm:!px-10'
+          >
             Buy Now
-          </button>
+          </a>
         </div>
       </header>
       <div id='home' className='bg-primary flex justify-center pb-5'>
-        <Image src={hero1} quality={100} alt='hero-1' />
+        <Image src={hero1} quality={100} priority alt='hero-1' />
       </div>
       <div
         id='about'
         className='flex justify-center bg-[url(/hero-2-mini.png)] bg-no-repeat bg-cover bg-right-top'
       >
         <div className='relative w-fit'>
-          <Image src={hero2} quality={100} alt='hero-2' />
+          <Image src={hero2} quality={100} priority alt='hero-2' />
           <div className='absolute inset-0 bg-hero'></div>
           <div className='absolute inset-0'>
             <div className='flex flex-col justify-center absolute right-10 lg:right-36 lg:max-w-lg h-full'>
