@@ -7,17 +7,16 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-  
-    container: {
-      center: true,
-      screens:{
-        "2xl": "1440px",
-      }
-    },
     extend: {
       colors:{
         'primary':'#0064FF',
       },
+      fontFamily: {
+        pricedown: ['var(--font-pricedown)'],
+      },
+      backgroundImage: {
+        'hero': "linear-gradient(270deg, #1A1A1A 0%, rgba(26, 26, 26, 0) 100%)",
+      }
     },
   },
   plugins: [],
