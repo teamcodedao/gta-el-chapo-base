@@ -19,7 +19,7 @@ export default function Home() {
           <img src='/logo.png' alt='logo' />
         </div>
         <nav>
-          <ul className='flex gap-2 sm:gap-5 lg:gap-10 text-lg sm:text-lx md:text-2xl lg:text-3xl font-light h-full items-center flex-wrap'>
+          <ul className='flex gap-x-2 sm:gap-x-5 lg:gap-x-10 text-lg sm:text-lx md:text-2xl lg:text-3xl font-light h-full items-center flex-wrap'>
             <li>
               <a href='#home'>Home</a>
             </li>
