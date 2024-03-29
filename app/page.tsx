@@ -13,7 +13,7 @@ import man5 from './man-5.png';
 export default function Home() {
   return (
     <main className='min-h-screen'>
-      <header className='bg-white text-black flex gap-4 sm:gap-8 justify-center overflow-hidden px-10 sm:px-2 lg:px-0'>
+      <header className='bg-white text-black flex gap-4 sm:gap-8 justify-center overflow-hidden py-0 sm:py-2 lg:py-0 px-10 sm:px-2 lg:px-0'>
         <div className='flex items-center shrink-0'>
           <img src='/man.png' alt='man' className='hidden lg:block' />
           <img src='/logo.png' alt='logo' />
@@ -35,7 +35,7 @@ export default function Home() {
           </ul>
         </nav>
         <div className='flex items-center shrink-0'>
-          <button className='sm:text-lg md:text-xl lg:text-2xl btn-comic !px-10'>
+          <button className='sm:text-lg md:text-xl lg:text-2xl btn-comic px-5 sm:!px-10'>
             Buy Now
           </button>
         </div>
