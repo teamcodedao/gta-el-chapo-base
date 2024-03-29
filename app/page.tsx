@@ -41,9 +41,9 @@ export default function Home() {
           <div className='absolute inset-0 bg-hero'></div>
           <div className='absolute inset-0'>
             <div className='flex flex-col justify-center absolute right-36 max-w-lg h-full'>
-              <h3 className='text-8xl font-extrabold font-pricedown text-right'>
+              <h2 className='text-8xl font-extrabold font-pricedown text-right'>
                 About
-              </h3>
+              </h2>
               <div className='mt-24 uppercase text-3xl text-right'>
                 Chapo coin Hot Ladys on Bas. $GTACHAPO is an aesthetic, a
                 lifestyle and a community. You like the art, we paint it blue!
@@ -71,6 +71,13 @@ export default function Home() {
         </Marquee>
       </div>
       <div>todo</div>
+      <div className='h-[810px] bg-primary bg-[url(/money-bg.gif)] bg-cover flex flex-col items-center justify-center gap-16'>
+        <h2 className='font-pricedown drop-shadow-[0px_2px_2px_rgba(0,0,0,0.75)] text-8xl'>
+          Tokenomics
+        </h2>
+        <h4 className='text-4xl'>Total supply:</h4>
+        <h4 className='text-7xl -mt-12'>420,690,000</h4>
+      </div>
       <footer className='bg-primary text-center py-12 font-pricedown text-4xl'>
         2024 © all rights reserved
       </footer>
