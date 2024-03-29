@@ -4,6 +4,11 @@ import Marquee from 'react-fast-marquee';
 import hero1 from './hero-1.png';
 import hero2 from './hero-2.png';
 import hero3 from './hero-3.png';
+import man1 from './man-1.png';
+import man2 from './man-2.png';
+import man3 from './man-3.png';
+import man4 from './man-4.png';
+import man5 from './man-5.png';
 
 export default function Home() {
   return (
@@ -69,7 +74,32 @@ export default function Home() {
           <span className='text-5xl inline-block px-14'>$DROGA</span>
         </Marquee>
       </div>
-      <div>todo</div>
+      <div className='bg-[#1A1A1A]'>
+        <div className='max-w-full w-[1440px] mx-auto grid grid-cols-3 gap-8 px-4 sm:px-8 lg:px-0 py-4 sm:py-8 [&_img]:object-cover'>
+          <div>
+            <Image src={man1} quality={100} alt='man-1' />
+          </div>
+          <div>
+            <Image src={man2} quality={100} alt='man-2' />
+          </div>
+          <div>
+            <Image src={man3} quality={100} alt='man-3' />
+          </div>
+          <div>
+            <Image
+              src={man4}
+              quality={100}
+              alt='man-4'
+              style={{
+                height: '100%',
+              }}
+            />
+          </div>
+          <div className='col-span-2'>
+            <Image src={man5} quality={100} alt='man-5' />
+          </div>
+        </div>
+      </div>
       <div className='h-[810px] bg-primary bg-[url(/money-bg.gif)] bg-cover flex flex-col items-center justify-center gap-16'>
         <h2 className='font-pricedown drop-shadow-[0px_2px_2px_rgba(0,0,0,0.75)] text-8xl'>
           Tokenomics
