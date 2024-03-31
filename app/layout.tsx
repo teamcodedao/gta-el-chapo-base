@@ -15,6 +15,7 @@ const pricedownFont = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_METADATABASE_URL),
   title: 'EL-Chapo',
   description: 'Drugs are not problem, they’re just business',
 };
